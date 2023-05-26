@@ -2,7 +2,7 @@ package com.prueba.credibanco.prueba.credibanco.dto;
 
 import java.time.LocalDateTime;
 
-public class ConsultTransactionResponse {
+public class TransactionConsultResponse {
 
     private String statusCode;
     private String message;

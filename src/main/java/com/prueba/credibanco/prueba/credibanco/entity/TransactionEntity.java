@@ -26,15 +26,7 @@ public class TransactionEntity {
     private CardEntity cardId;
     private LocalDateTime creationDate;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public int getPrice() {
+      public int getPrice() {
         return price;
     }
 
@@ -42,11 +34,7 @@ public class TransactionEntity {
         this.price = price;
     }
 
-    public String getTransactionId() {
-        return transactionId;
-    }
-
-    public void setTransactionId(String transactionId) {
+     public void setTransactionId(String transactionId) {
         this.transactionId = transactionId;
     }
 

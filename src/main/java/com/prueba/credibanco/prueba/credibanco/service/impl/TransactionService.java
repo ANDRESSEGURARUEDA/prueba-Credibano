@@ -1,7 +1,7 @@
 package com.prueba.credibanco.prueba.credibanco.service.impl;
 
 
-import com.prueba.credibanco.prueba.credibanco.dto.ConsultTransactionResponse;
+import com.prueba.credibanco.prueba.credibanco.dto.TransactionConsultResponse;
 import com.prueba.credibanco.prueba.credibanco.dto.TransactionAnulationRequest;
 import com.prueba.credibanco.prueba.credibanco.dto.TransactionRequest;
 import com.prueba.credibanco.prueba.credibanco.dto.TransactionResponse;
@@ -74,8 +74,8 @@ public class TransactionService implements ITransactionalService {
     }
 
     @Override
-    public ConsultTransactionResponse consultTransaction(String transactionId) {
-        ConsultTransactionResponse transactionResponse = new ConsultTransactionResponse();
+    public TransactionConsultResponse consultTransaction(String transactionId) {
+        TransactionConsultResponse transactionResponse = new TransactionConsultResponse();
         TransactionEntity transaction = transactionRepository.findByTransactionId(transactionId);
         if (transaction != null) {
             transactionResponse.setStatusCode("00");

@@ -1,7 +1,7 @@
 package com.prueba.credibanco.prueba.credibanco.controller;
 
 
-import com.prueba.credibanco.prueba.credibanco.dto.ConsultTransactionResponse;
+import com.prueba.credibanco.prueba.credibanco.dto.TransactionConsultResponse;
 import com.prueba.credibanco.prueba.credibanco.dto.TransactionAnulationRequest;
 import com.prueba.credibanco.prueba.credibanco.dto.TransactionRequest;
 import com.prueba.credibanco.prueba.credibanco.dto.TransactionResponse;
@@ -26,8 +26,8 @@ public class TransactionController {
     }
 
     @GetMapping ("{transactionId}")
-    public ResponseEntity<ConsultTransactionResponse> consultTransaction(@PathVariable String transactionId) {
-        ConsultTransactionResponse consultTransactionResponse = transactionService.consultTransaction(transactionId);
+    public ResponseEntity<TransactionConsultResponse> consultTransaction(@PathVariable String transactionId) {
+        TransactionConsultResponse consultTransactionResponse = transactionService.consultTransaction(transactionId);
         return ResponseEntity.status(consultTransactionResponse.getStatusCode().equals("00") ? HttpStatus.OK : HttpStatus.NOT_FOUND).body(consultTransactionResponse);
     }
 

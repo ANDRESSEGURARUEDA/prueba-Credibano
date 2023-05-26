@@ -28,11 +28,6 @@ public class CardEntity {
     public Long getId() {
         return id;
     }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public Long getCardId() {
         return cardId;
     }
@@ -41,16 +36,8 @@ public class CardEntity {
         this.cardId = carId;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 
     public void setLastName(String lastName) {
@@ -71,10 +58,6 @@ public class CardEntity {
 
     public void setStatusCard(String statusCard) {
         this.statusCard = statusCard;
-    }
-
-    public LocalDateTime getCreationDate() {
-        return creationDate;
     }
 
     public void setCreationDate(LocalDateTime creationDate) {
