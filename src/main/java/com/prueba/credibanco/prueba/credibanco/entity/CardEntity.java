@@ -1,6 +1,8 @@
 package com.prueba.credibanco.prueba.credibanco.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Entity

@@ -1,9 +1,17 @@
 package com.prueba.credibanco.prueba.credibanco.dto;
 
-public class CardRequest {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+@JsonSerialize
+@JsonIgnoreProperties (ignoreUnknown = true)
+public class CardRequest {
+    @JsonProperty ("cardId")
     private String cardId;
+    @JsonProperty ("name")
     private String name;
+    @JsonProperty ("lastName")
     private String lastName;
 
     public String getCardId() {

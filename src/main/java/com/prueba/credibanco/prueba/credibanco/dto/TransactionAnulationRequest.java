@@ -1,8 +1,16 @@
 package com.prueba.credibanco.prueba.credibanco.dto;
 
-public class TransactionAnulationRequest {
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonSerialize
+@JsonIgnoreProperties (ignoreUnknown = true)
+public class TransactionAnulationRequest {
+    @JsonProperty ("cardId")
     private Long cardId;
+    @JsonProperty ("transactionId")
     private String transactionId;
 
     public Long getCardId() {

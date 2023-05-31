@@ -1,7 +1,8 @@
 package com.prueba.credibanco.prueba.credibanco.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
+import javax.persistence.*;
+
 import java.time.LocalDateTime;
 
 @Entity
